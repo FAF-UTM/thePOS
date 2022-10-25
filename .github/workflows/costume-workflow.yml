@@ -32,3 +32,33 @@ jobs:
         env:
           MONGODB_LINK: ${{ secrets.MONGODB_LINK }}
 
+    # Single deploy job since we're just deploying
+    deploy:
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+      runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          node-version: [ 10.x, 12.x, 14.x, 15.x ]
+      steps:
+        - uses: actions/checkout@v3
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+        - run: npm start
+
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Setup Pages
+          uses: actions/configure-pages@v2
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v1
+          with:
+            # Upload entire repository
+            path: './src/main/webapp/'
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v1
+
