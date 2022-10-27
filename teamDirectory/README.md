@@ -17,3 +17,14 @@
 - report [link](https://utm.sharepoint.com/:w:/s/thePOS/ETxzIMH6dL9Hmlmnofu4UJAB6MwQT_38QHSjeaomYW2E3Q?e=iuAz3k)
 ### Documetation and materials
 - Team Documetation [link](https://utm.sharepoint.com/:w:/s/thePOS/EeUpJQwqdTBPpVZqPfzM1VoBtylki4-z-t9oe6pvINRq0w?e=xFxXJH)
+
+## Diagrams
+1. open www.diagrams.net - https://app.diagrams.net/?src=about
+
+2. signin with github
+
+- Diagram 1:
+
+            https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd1.drawio
+
+- Diagram 2:
