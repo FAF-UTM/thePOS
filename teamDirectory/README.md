@@ -28,3 +28,5 @@
             https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd1.drawio
 
 - Diagram 2:
+
+            https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd2.drawio
