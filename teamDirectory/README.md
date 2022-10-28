@@ -19,14 +19,8 @@
 - Team Documetation [link](https://utm.sharepoint.com/:w:/s/thePOS/EeUpJQwqdTBPpVZqPfzM1VoBtylki4-z-t9oe6pvINRq0w?e=xFxXJH)
 
 ## Diagrams
-1. open www.diagrams.net - https://app.diagrams.net/?src=about
 
-2. signin with github
 
-- Diagram 1:
-
-            https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd1.drawio
-
-- Diagram 2:
-
-            https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd2.drawio
+- Diagram 1: [link](https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd1.drawio)
+- Diagram 2: [link](https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd2.drawio)
+- Diagram 3: [link](https://app.diagrams.net/#HFAF-UTM%2FthePOS%2Fmain%2FteamDirectory%2FthePOSd3.drawio)
