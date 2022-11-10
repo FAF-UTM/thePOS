@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
   version = '';
   account: Account | null = null;
   entitiesNavbarItems: any[] = [];
-
+  path = '';
   constructor(
     private loginService: LoginService,
     private translateService: TranslateService,
@@ -36,6 +36,12 @@ export class NavbarComponent implements OnInit {
     if (VERSION) {
       this.version = VERSION.toLowerCase().startsWith('v') ? VERSION : `v${VERSION}`;
     }
+    this.router.events.subscribe(val => {
+      this.path = this.router.url;
+      if (this.path == '/') {
+        this.path = 'aaa';
+      }
+    });
   }
 
   ngOnInit(): void {

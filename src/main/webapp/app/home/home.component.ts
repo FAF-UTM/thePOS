@@ -34,6 +34,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
   topicture(): void {
-    this.router.navigateByUrl('/photo');
+    this.router.navigate(['/photo']);
   }
 }
