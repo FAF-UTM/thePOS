@@ -1,1 +1,12 @@
-<div class="h-100 d-flex justify-content-center"></div>
+<div class="d-flex justify-content-center align-items-center" style="height: 100%">
+  <div style="margin-top: -10%" class="justify-content-center">
+    <video id="video" autoplay="" width="320" height="240"></video>
+    <br />
+    <button class="btn btn-primary" id="click-photo">Click Photo</button>
+  </div>
+  <div id="dataurl-container">
+    <canvas id="canvas" width="320" height="240"></canvas>
+    <div id="dataurl-header">Image Data URL</div>
+    <textarea id="dataurl" readonly=""></textarea>
+  </div>
+</div>
