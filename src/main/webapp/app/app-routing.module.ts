@@ -33,6 +33,10 @@ import { UserRouteAccessService } from 'app/core/auth/user-route-access.service'
           loadChildren: () => import('./photo/photo.module').then(m => m.PhotoModule),
         },
         {
+          path: 'about',
+          loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
+        },
+        {
           path: '',
           loadChildren: () => import(`./entities/entity-routing.module`).then(m => m.EntityRoutingModule),
         },

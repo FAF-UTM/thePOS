@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -8,11 +8,13 @@ import { Account } from 'app/core/auth/account.model';
 
 @Component({
   selector: 'jhi-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class AboutComponent implements OnInit, OnDestroy {
   account: Account | null = null;
+
+  title = 'app';
 
   private readonly destroy$ = new Subject<void>();
 
@@ -32,11 +34,5 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
-  }
-  topicture(): void {
-    this.router.navigate(['/photo']);
-  }
-  toAbout(): void {
-    this.router.navigate(['/about']);
   }
 }
