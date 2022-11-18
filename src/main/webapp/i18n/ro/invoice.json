@@ -1,0 +1,28 @@
+{
+  "thePosApp": {
+    "invoice": {
+      "home": {
+        "title": "Invoices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Invoice",
+        "createOrEditLabel": "Creeare sau editare Invoice",
+        "notFound": "No Invoices found"
+      },
+      "created": "A fost creată o nouă entitate Invoice cu identificatorul {{ param }}",
+      "updated": "Invoice cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Invoice cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Invoice {{ id }}?"
+      },
+      "detail": {
+        "title": "Invoice"
+      },
+      "id": "ID",
+      "invoiceNr": "Invoice Nr",
+      "totalPrice": "Total Price",
+      "createdDate": "Created Date",
+      "user": "User",
+      "order": "Order"
+    }
+  }
+}

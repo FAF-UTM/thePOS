@@ -1,0 +1,37 @@
+
+entity Invoice {
+	invoiceNr String required maxlength(13) minlength(13)
+	totalPrice Float required
+	createdDate Instant required
+}
+
+entity Product {
+  	name String required maxlength(100) minlength(1)	
+	code String required maxlength(8) minlength(8)
+  	description String required maxlength(2000) minlength(1)
+	price Float required
+	image ImageBlob required
+	active Boolean required
+    createdDate Instant required
+    modifiedDate Instant
+}
+
+entity Order {
+    orderNr String required maxlength(13) minlength(13)
+	quantity Integer required 
+	total  Float required
+}
+
+relationship OneToMany{
+	Invoice{order(orderNr) required} to Order
+}
+
+relationship OneToOne {
+	Invoice{user(login)} to User
+    Order{product(name) required} to Product
+}
+
+filter Invoice, Product, Order
+paginate Invoice, Product, Order with pagination
+service all with serviceImpl
+

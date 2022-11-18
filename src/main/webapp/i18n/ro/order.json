@@ -1,0 +1,28 @@
+{
+  "thePosApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Order",
+        "createOrEditLabel": "Creeare sau editare Order",
+        "notFound": "No Orders found"
+      },
+      "created": "A fost creată o nouă entitate Order cu identificatorul {{ param }}",
+      "updated": "Order cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Order cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "orderNr": "Order Nr",
+      "quantity": "Quantity",
+      "total": "Total",
+      "product": "Product",
+      "invoice": "Invoice"
+    }
+  }
+}
